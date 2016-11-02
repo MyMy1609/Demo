@@ -3,6 +3,9 @@
  */
 package GitDemo;
 
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
 import javax.swing.JFrame;
 
 /**
@@ -10,7 +13,13 @@ import javax.swing.JFrame;
  *
  */
 public class GuiDemo extends JFrame {
-
+	public GuiDemo(){
+		setSize(300,300);
+		setLayout(new FlowLayout());
+		for(int i=0;i<=20;i++){
+			add(new JButton("B"+i));
+		}
+	}
 	/**
 	 * @param args
 	 */
